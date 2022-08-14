@@ -9,23 +9,18 @@ function getComputerChoice()
 function playRound(playerChoice)
 {
     const computerChoice = getComputerChoice();
-    let winner;
+    let winner = 1;
     let winText;
     
-    if(playerChoice.toLowerCase() == "rock" && computerChoice == "scissor")
+    if( playerChoice.toLowerCase() == "rock" && computerChoice == "scissor" ||
+        playerChoice.toLowerCase() == "paper" && computerChoice == "rock" ||
+        playerChoice.toLowerCase() == "paper" && computerChoice == "rock") 
     {
         winner = 0; 
-    } else if(playerChoice.toLowerCase() == "paper" && computerChoice == "rock")
-    {
-        winner = 0;
-    } else if(playerChoice.toLowerCase() == "paper" && computerChoice == "rock")
-    {
-        winner = 0;
-    } else if(playerChoice.toLowerCase() === computerChoice)
+    }  else if(playerChoice.toLowerCase() === computerChoice)
     {
         winner = 2;
     }
-    else winner = 1;
 
     switch(winner)
     {
