@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+}
+
+.playbox {
+  display: flex;
+  background-color: rgb(99, 77, 77);
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 0.2rem black);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+}
+
+.results {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+}
+.choices {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+}

@@ -43,7 +43,7 @@ function playRound(playerChoice) {
   return winner;
 }
 
-function game() {
+/* function game() {
   let playerChoice;
 
   for (let rounds = 0; rounds < 5; rounds++) {
@@ -63,7 +63,7 @@ function game() {
   }
 
   determineWinner();
-}
+} */
 
 function storeScore(winner) {
   if (winner === 0) playerScore++;
